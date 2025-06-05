@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dopefolio - Portfolio Template</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <title>Always Dark Mode</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Custom CSS for animations and things that Tailwind can't easily handle */
@@ -579,22 +579,20 @@
         const mobileToggle = document.getElementById('mobile-toggle');
         const html = document.documentElement;
         
-        // Check for saved user preference or use system preference
-        if (localStorage.getItem('dark-mode') === 'true' || 
-            (!localStorage.getItem('dark-mode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-            toggle.checked = true;
-            mobileToggle.checked = true;
-        }
         
-        // Toggle dark mode
-        function toggleDarkMode() {
-            html.classList.toggle('dark');
-            const isDark = html.classList.contains('dark');
-            localStorage.setItem('dark-mode', isDark);
-            toggle.checked = isDark;
-            mobileToggle.checked = isDark;
-        }
+        // Check for saved user preference or use system preference
+if (localStorage.getItem('dark-mode') === 'true' || 
+    (!localStorage.getItem('dark-mode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    html.classList.add('dark');
+}
+
+// Optional: Just add dark mode by default and remove toggle functionality
+// Remove the toggle functionality entirely, as dark mode is permanent.
+function applyDarkMode() {
+    html.classList.add('dark');  // Ensure dark mode is always applied
+    localStorage.setItem('dark-mode', 'true');  // Set localStorage to always be dark
+}
+applyDarkMode();
         
         toggle.addEventListener('change', toggleDarkMode);
         mobileToggle.addEventListener('change', toggleDarkMode);
