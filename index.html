@@ -472,42 +472,56 @@
 
     <!-- Projects Section -->
     <section id="Work" class="py-24 relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 bg-gradient-to-br from-black via-black to-black dark:from-black dark:via-black dark:to-black"></div>
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(79,70,229,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_70%_20%,rgba(79,70,229,0.15),transparent_50%)]"></div>
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(124,58,237,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_30%_80%,rgba(124,58,237,0.15),transparent_50%)]"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-black via-black to-black"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(79,70,229,0.15),transparent_50%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(124,58,237,0.15),transparent_50%)]"></div>
+    
+    <div class="container mx-auto px-8 relative">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">My Work</h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
+            <p class="text-gray-300 mt-6 max-w-2xl mx-auto">
+                Here you will find a selection of my projects, showcasing my skills in development and design.
+            </p>
+        </div>
         
-        <div class="container mx-auto px-8 relative">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">My Work</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
-                <p class="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto">
-                    Here you will find about my work and projects
-                </p>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="project-card bg-black/80 dark:bg-black/80 backdrop-blur-sm overflow-hidden shadow-xl border border-gray-800 dark:border-gray-800 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl fade-in linkedin-card">
-                    <img src="" alt="Brand Identity Design" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">For Cafe business</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            In processing.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900 dark:to-purple-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">GeminiApi</span>
-                            <span class="px-3 py-1 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900 dark:to-purple-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Langchain</span>
-                            <span class="px-3 py-1 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900 dark:to-purple-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900 dark:to-purple-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Web development</span>
-                        </div>
-                        <a href="https://www.notion.so/Caf-lune-209a75e2?source=copy_link" target="_blank" class="inline-flex items-center text-indigo-600 dark:text-indigo-400 font-medium hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-300">
-                            View Project <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
-                        </a>
+            <a href="https://pdftosummarizeandmcq.streamlit.app/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="project-card group block bg-black/80 backdrop-blur-sm overflow-hidden rounded-lg shadow-xl border border-gray-800 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black focus-visible:ring-indigo-500 fade-in">
+                
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                     alt="Web application showing students collaborating over documents." 
+                     class="w-full h-48 object-cover">
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">For Students: PDF Tool</h3>
+                    <p class="text-gray-300 mb-4">
+                        Summarize things, Generate Quizzes, and Learn with AI from any PDF document.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 rounded-full text-sm font-medium">GeminiApi</span>
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 rounded-full text-sm font-medium">Langchain</span>
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 rounded-full text-sm font-medium">RAG</span>
+                        <span class="px-3 py-1 bg-indigo-900/50 text-indigo-200 rounded-full text-sm font-medium">Streamlit</span>
+                    </div>
+                    
+                    <div class="inline-flex items-center text-indigo-400 font-medium transition-colors duration-300 group-hover:text-indigo-300">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                     </div>
                 </div>
+            </a>
 
-               
-    </section>
+            </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 relative overflow-hidden">
@@ -814,7 +828,7 @@
         });
     </script>
 
-    <!-- Three.js Background Code -->
+   
     
     </script>
 </body>
